@@ -21,12 +21,20 @@ class UserRepository extends ServiceEntityRepository
         parent::__construct($registry, User::class);
     }
 
-    public function saveNewUser(): void
+    public function saveNewUser()
     {
-		$user = (new User())
-			->setEmail('registereduser@email.com')
-			->setPassword('registereduserpassword');
-		$this->getEntityManager()->persist($user);
-		$this->getEntityManager()->flush();
+        // Création de l'utilisateur
+
+        // Enregistrement en base de données
     }
+
+//    public function saveNewUser(): void
+//    {
+//		$user = (new User())
+//			->setEmail('registereduser@email.com')
+//			->setPassword('registereduserpassword');
+//
+//		$this->getEntityManager()->persist($user);
+//		$this->getEntityManager()->flush();
+//    }
 }
