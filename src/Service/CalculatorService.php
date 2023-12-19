@@ -4,8 +4,13 @@ namespace App\Service;
 
 class CalculatorService
 {
-	public function add(int $a, int $b): int
-	{
-		return $a + $b;
-	}
+    public function add(int $a, int $b)
+    {
+
+    }
+
+//	public function add(int $a, int $b): int
+//	{
+//		return $a + $b;
+//	}
 }
